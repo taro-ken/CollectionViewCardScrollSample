@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         for i in 0 ..< 100 {
-            namber.append(String(i))
+            number.append(String(i))
             
         }
         viewWidth = view.frame.width
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return namber.count
+        return number.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -63,7 +63,7 @@ extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource,UI
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOffset = CGSize(width: 8, height: 8)
         cell.layer.masksToBounds = false
-        cell.titleLabel?.text = namber[indexPath.row]
+        cell.titleLabel?.text = number[indexPath.row]
         return cell
     }
 
