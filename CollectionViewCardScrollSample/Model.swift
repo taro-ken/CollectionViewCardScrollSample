@@ -7,10 +7,10 @@
 
 import Foundation
 
-var namber = [String]()
+var number = [String]()
 
 struct Model {
-    var nambername: String = ""
+    var numbername: String = ""
     
 }
 

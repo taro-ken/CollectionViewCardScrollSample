@@ -21,7 +21,7 @@ class CollectionViewCell: UICollectionViewCell {
     }
     private func configure(menu: Model) {
 
-        titleLabel?.text = menu.nambername
+        titleLabel?.text = menu.numbername
     }
     
     
