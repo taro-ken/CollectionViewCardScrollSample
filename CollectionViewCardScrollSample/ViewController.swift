@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  CollectionViewCardScrollSample
 //
-//  Created by 木元健太郎 on 2021/03/27.
+//  Created by 木元健太郎 on 2021/03/31.
 //
 
 import UIKit
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         for i in 0 ..< 100 {
-            number.append(String(i))
+            namber.append(String(i))
             
         }
         viewWidth = view.frame.width
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return number.count
+        return namber.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -63,7 +63,7 @@ extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource,UI
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOffset = CGSize(width: 8, height: 8)
         cell.layer.masksToBounds = false
-        cell.titleLabel?.text = number[indexPath.row]
+        cell.titleLabel?.text = namber[indexPath.row]
         return cell
     }
 
