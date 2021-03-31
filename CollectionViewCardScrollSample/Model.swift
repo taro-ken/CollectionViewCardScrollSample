@@ -2,7 +2,7 @@
 //  Model.swift
 //  CollectionViewCardScrollSample
 //
-//  Created by 木元健太郎 on 2021/03/27.
+//  Created by 木元健太郎 on 2021/03/31.
 //
 
 import Foundation
@@ -13,6 +13,4 @@ struct Model {
     var nambername: String = ""
     
 }
-
-
 
